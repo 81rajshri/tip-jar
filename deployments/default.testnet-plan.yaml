@@ -1,0 +1,18 @@
+---
+id: 0
+name: Testnet deployment
+network: testnet
+stacks-node: "https://api.testnet.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoind.testnet.stacks.co:18332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: private-student-identity-resolver
+            expected-sender: ST1Y663KJFCK66FT2PMKJ7G8G3ZQ728MV6K1TD9MM
+            cost: 20870
+            path: "contracts\\private-student-identity-resolver.clar"
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.2"
