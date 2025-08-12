@@ -15,6 +15,7 @@ The goal of this project is to create a private and secure method for managing s
 - **Integration with other DApps**: Extend functionality to allow other decentralized applications to interact with student identity data based on whitelisted access.
 
 ## Contract Add
+ST1Y663KJFCK66FT2PMKJ7G8G3ZQ728MV6K1TD9MM.private-student-identity-resolver
 
 ### Function 1: `add-to-whitelist`
 
@@ -26,10 +27,5 @@ The goal of this project is to create a private and secure method for managing s
 **Usage**:
 - Only the contract owner can call this function.
 - Adds a given account to the whitelist.
-
-```lisp
-(define-public (add-to-whitelist (account principal))
-  (begin
-    (asserts! (is-eq tx-sender contract-owner) err-owner-only)
-    (map-set whitelist account true)
-    (ok true)))
+- 
+<img width="1916" height="1077" alt="image" src="https://github.com/user-attachments/assets/ac87edd0-65b7-48be-87e4-a7fa13db6fec" />
